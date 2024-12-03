@@ -1,0 +1,34 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "PlayStation 5",
+      "preco": 4199.59,
+      "imagem": "./imagens/playStation5.png"
+    },
+    {
+      "id": "2",
+      "nome": "Xbox One S",
+      "preco": 2299.99,
+      "imagem": "./imagens/xboxOne.png"
+    },
+    {
+      "id": "3",
+      "nome": "Video Game Retrô",
+      "preco": 186.66,
+      "imagem": "./imagens/jogo-retro.png"
+    },
+    {
+      "id": "23cf",
+      "nome": "Jogo FC25",
+      "preco": 370,
+      "imagem": "https://needgames.com.br/wp-content/uploads/2024/07/eafc25n.jpg.webp"
+    },
+    {
+      "id": "c5bd",
+      "nome": "Jogo One Piece",
+      "preco": 149,
+      "imagem": "./imagens/jogo-onePiece.png"
+    }
+  ]
+}

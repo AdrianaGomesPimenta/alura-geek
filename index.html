@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AluraGeek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav class="navbar">
+            <img class="navbar-img" src="./imagens/logo.png" alt="Logo do site"><h1 class="navbar-titulo">AluraGeek</h1>
+        </nav>
+    </header>
+
+    <!-- PRODUTOS -->
+    <main class="main-container">
+        <section class="meus-produtos" aria-labelledby="produtos-title">
+            <h1 class="produtos-title" id="produtos-title">MEUS PRODUTOS:</h1>
+            <div class="produtos-container">
+                <article class="produto-card">
+                    <img src="./imagens/playStation5.png" alt="Imagem do produto PlayStation 5">
+                    <h3>PlayStation 5 </h3>
+                    <div class="card-footer">
+                        <p>R$ 4.199,59</p>
+                        <button class="delete-btn" aria-label="Remover PlayStation 5">🗑️</button>
+                    </div> 
+                </article>
+
+                 <article class="produto-card">
+                    <img src="./imagens/xboxOne.png" alt="Imagem do Xbox One S">
+                    <h3>Xbox One S</h3>
+                    <div class="card-footer">
+                        <p>R$ 2.299,99</p>
+                        <button class="delete-btn" aria-label="Remover Xbox One S">🗑️</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="./imagens/jogo-retro.png" alt="Imagem do Game Retrô">
+                    <h3>Video Game Retrô</h3>
+                    <div class="card-footer">
+                        <p>R$ 186,66</p>
+                        <button class="delete-btn" aria-label="Remover Video Game Retrô">🗑️</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="./imagens/jogo-ps5.png" alt="Imagem do Jogo FC25">
+                    <h3>Jogo FC25</h3>
+                    <div class="card-footer">
+                        <p>R$ 379,89</p>
+                        <button class="delete-btn" aria-label="Remover Jogo FC25">🗑️</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="./imagens/jogo-onePiece.png" alt="Imagem do Jogo One Piece">
+                    <h3>Jogo One Piece</h3>
+                    <div class="card-footer">
+                        <p>R$ 149,99</p>
+                        <button class="delete-btn" aria-label="Remover Jogo One Piece">🗑️</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="./imagens/mario-jogo.png" alt="Cartucho do Super Mario">
+                    <h3>Jogo Super Mario</h3>
+                    <div class="card-footer">
+                        <p>R$ 149,99</p>
+                        <button class="delete-btn" aria-label="Remover Jogo Super Mario">🗑️</button>
+                    </div>
+                </article>
+                 
+                <article class="produto-card">
+                    <img src="./imagens/fones-gamer.png" alt="Fone Gamer">
+                    <h3>Headset Gamer</h3>
+                    <div class="card-footer">
+                        <p>R$ 438,99</p>
+                        <button class="delete-btn" aria-label="Remover Headset Gamer">🗑️</button>
+                    </div>
+                </article>
+
+            </div>  
+        </section>
+        
+        <!-- ADICIONAR PRODUTOS -->
+        <section class="adiciona-produtos" aria-labelledby="adicionar-produto-title">        
+            <div class="form-container">
+                <h2 id="adicionar-produto-title">ADICIONAR PRODUTO:</h2>
+                <form id="produto-form" aria-labelledby="adicionar-produto-title" aria-describedby="formulario-de-adicao">
+                    <fieldset>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Nome..." required>
+        
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" placeholder="Valor..." required>
+        
+                        <label for="imagem">Imagem:</label>
+                        <input type="url" id="imagem" placeholder="Imagem... (URL)" required>
+        
+                        <div class="form-actions">
+                            <button type="submit">Guardar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+     
+    <script src="./js/main.js" type="module"></script> 
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 <strong>AluraGeek</strong>. Todos os direitos reservados.</p>
+        <p>Feito com ❤️ por <strong>Adriana</strong></p>
+    </footer>
+      
+</body>
+</html>
