@@ -1,0 +1,304 @@
+/* Reset e Box-Sizing */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+/* Estilo da Pagina */
+:root {
+    --cabecalho-rodapé:#1e1e1e;
+    --cabecalho-titulo:#fbc02d;
+    --color-titulo:#000000;
+    --primary-color: #4169E1;
+    --primary-hover:#6495ED;
+    --secondary-color: #ccc;
+    --background-color: #f9f9f9;
+    --color-branco: #fff;
+    --input-padding: 10px;
+    --button-padding: 10px;
+    --border-radius: 4px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o Menu */
+.navbar {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cabecalho-rodapé);
+    padding: 1rem 2rem;
+    width: 100%;
+    flex-wrap: wrap;   
+}
+
+/* Animação da navbar-img */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.navbar-img{
+    width: 100%;
+    max-width: 70px;
+    border-radius: 8px;
+    animation: pulse 3s infinite ease-in-out; /* Faz a logo pulsar continuamente */
+}
+
+/* Título do navbar */
+.navbar-titulo {
+    font-size: 1.5rem;
+    color: var(--cabecalho-titulo);
+    transition: color 0.3s ease;
+}
+
+/* Contêiner das seções */
+.main-container {
+    display: flex;
+    width: 100%;
+    max-width: 1380px;
+    height: auto;
+    margin:0 auto; /* Centraliza o main-container na página */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+/* Container da seção produtos */
+.meus-produtos { 
+    width: 100%;
+    max-width: 758px; 
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 40px;
+    max-height: 750px;
+    overflow-y: auto;
+}
+
+.produtos-title{
+    margin-bottom: 1rem;
+    color: var(--color-titulo);
+}
+
+/* Estilo da barra de rolagem personalizada */
+.meus-produtos::-webkit-scrollbar {
+    width: 8px;
+}
+
+.meus-produtos::-webkit-scrollbar-thumb {
+    background-color:  var(--primary-color) ;
+    border-radius: 4px;
+}
+
+.meus-produtos::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Estilo para a estrutura dos produtos */
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.produto-card {
+    background-color: var(--primary-color);
+    color: var(--color-branco);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.produto-card:hover {
+    transform: scale(1.05);
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.card-footer p {
+    margin: 0;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--color-branco);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+/* Seção adiciona pedidos */
+.form-container {
+    width: 100%;
+    max-width: 472px;
+    gap: 40px;
+    padding: 40px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+    color: var(--color-titulo);
+    
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+
+.form-container input {
+    width: 100%;
+    padding: var(--input-padding);
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+.form-container input:focus {
+    border-color: var(--primary-color);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-container button {
+    width: 48%;
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-container button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--color-branco);
+}
+
+.form-container button[type="reset"] {
+    background-color: var(--primary-color);
+    color: var(--color-branco);
+}
+
+.form-container button:hover {
+    opacity: 0.9;
+    color: var(--color-titulo);
+}
+
+.form-container button:focus {
+    outline: 2px solid var(--primary-color);
+    
+}
+
+/* Estilo para o Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--cabecalho-rodapé);
+    color: var(--color-branco);
+    /* margin-top: 2rem; */
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+strong{
+    color: var(--cabecalho-titulo);
+}
+
+/* Media Query para dispositivos grandes (desktop) */
+@media (min-width: 1024px) {
+    .main-container {
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Media Query para dispositivos médios (tablets) */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+/* Media Query para dispositivos pequenos (smartphones) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .produtos-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+        gap: 10px;
+    }
+
+    .meus-produtos, .form-container {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .delete-btn {
+        font-size: 1rem;
+    }
+}
+
+/* Media Query para fontes menores em dispositivos menores */
+@media (max-width: 480px) {
+    .navbar-titulo {
+        font-size: 1.2rem;
+    }
+
+    .form-container h2 {
+        font-size: 1.4rem;
+    }
+    .produtos-container {
+        grid-template-columns: 1fr; /* 1 coluna para smartphones */
+        
+    }
+
+}
+
